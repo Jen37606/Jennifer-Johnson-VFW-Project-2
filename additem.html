@@ -13,10 +13,11 @@ Term: 1107
 		<meta name="keywords" content="" />
 		<meta name="robots" content="" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		
 	</head>
 	<body>
 		<h1>Add movie</h1>
-		<form action="" method="post">
+		<form action="#" method="post" onsubmit="saveItems();">
 			<fieldset>
 				<legend>Select Genre</legend> <!-- Drop down box to select a movie category -->
 				<label for="genre">Movie Genre: </label>
@@ -54,13 +55,16 @@ Term: 1107
 						</ul>
 					</li>
 					<li><label for="release">Release Date:</label><br />
-					<input type="date" min="1900-01-01" max="" placeholder="2011-08-04" required aria-required="true" id="title" /></li> <!-- date field -->
+					<input type="date" min="1900-01-01" max="" placeholder="2011-08-04" required aria-required="true" id="release" /></li> <!-- date field -->
 					<li><label for="description">Movie Description: </label><br />
-					<textarea></textarea></li> <!-- textarea -->
+					<textarea id="description"></textarea></li> <!-- textarea -->
 				</ul>
 			</fieldset>
 			<br />
-			<input type="button" value="Add Movie To Collection" /> <!-- button -->
+			<input type="submit" value="Add Movie To Collection" /> <!-- button -->
 		</form>
+		
+		<script src="main.js"></script>
+		<script>getItems();</script>
 	</body>
 </html>
