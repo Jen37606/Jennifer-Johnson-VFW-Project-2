@@ -17,7 +17,7 @@ Term: 1107
 	</head>
 	<body>
 		<h1>Add movie</h1>
-		<form action="#" method="post" onsubmit="saveItems();">
+		<form action="#" method="post" onsubmit="saveItems(); location.reload();" id="main">
 			<fieldset>
 				<legend>Select Genre</legend> <!-- Drop down box to select a movie category -->
 				<label for="genre">Movie Genre: </label>
@@ -39,19 +39,19 @@ Term: 1107
 				<legend>Movie Information</legend>
 				<ul>
 					<li><label for="title">Movie Title:</label><br />
-					<input type="text" id="title" /></li> <!-- text field -->
+					<input type="text" id="title" onclick="this.value=''" /></li> <!-- text field -->
 					<li><label for="actor">Main Actor/Actress:</label><br />
-					<input type="text" id="actor" /></li> <!-- text field -->
+					<input type="text" id="actor" onclick="this.value=''" /></li> <!-- text field -->
 					<li><label for="director">Director:</label><br />
-					<input type="text" id="director" /></li> <!-- text field -->
+					<input type="text" id="director" onclick="this.value=''" /></li> <!-- text field -->
 					<li><label for="rating">Rating:</label><br />
 					<input type="range" min="1" max="5" id="rating" /></li> <!-- range field -->
 					<li><label for="favorites">Add to favorites?</label><br />
 					<input type="checkbox" id="favorites" /></li> <!-- checkbox -->
 					<li><label for="family">Is this a family movie?</label><br />
 						<ul>
-							<li><label for="yes">Yes </label><input type="radio" checked value="yes" id="yes" name="family" /></li> <!-- radio button yes -->
-							<li><label for="no">No </label><input type="radio" value="no" id="no" name="family" /></li> <!-- radio button no -->
+							<li><label for="yes">Yes </label><input type="radio" checked value="Yes" id="yes" name="family" /></li> <!-- radio button yes -->
+							<li><label for="no">No </label><input type="radio" value="No" id="no" name="family" /></li> <!-- radio button no -->
 						</ul>
 					</li>
 					<li><label for="release">Release Date:</label><br />
@@ -63,7 +63,7 @@ Term: 1107
 			<br />
 			<input type="submit" value="Add Movie To Collection" /> <!-- button -->
 		</form>
-		
+		<p id="clear"><a onclick="clearItems(); location.reload();">Clear Local Storage</a></p>
 		<script src="main.js"></script>
 		<script>getItems();</script>
 	</body>
