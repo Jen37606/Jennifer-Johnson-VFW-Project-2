@@ -3,8 +3,10 @@ h1{
 	font-weight: bold;
 	border: 1px solid #bbb;
 	color: #555;
-	background: #eee;
+	background-color: #eee;
 	padding: 10px;
+	text-transform: capitalize;
+	text-align: left;
 }
 
 fieldset{
@@ -21,7 +23,7 @@ legend{
 	border-left: 1px solid #bbb;
 	border-right: 1px solid #bbb;
 	padding: 10px 15px;
-	background: #eee;
+	background-color: #eee;
 }
 
 label{
@@ -42,6 +44,7 @@ textarea{
 	color: #555;
 	height: 100px;
 	line-height: 20px;
+	margin-top: 10px;
 }
 
 select{
@@ -70,5 +73,6 @@ li{
 
 li li{
 	padding-left: 10px;
-	color: red;
+	font-style: italic;
+	
 }
