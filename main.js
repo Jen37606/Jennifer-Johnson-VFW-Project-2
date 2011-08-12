@@ -8,7 +8,7 @@ var getItems = function(){
 		var director = localStorage.getItem('appdirector');
 		var rating = localStorage.getItem('apprating');
 		var favorites = localStorage.getItem('appfavorites');
-		var familyyes = localStorage.getItem('appfamilyyes');
+		var family = localStorage.getItem('appfamily');
 		var release = localStorage.getItem('apprelease');
 		
 		var viewMovie = [
@@ -23,6 +23,7 @@ var getItems = function(){
 		];
 		
 		console.log(viewMovie);
+		alert(viewMovie);
 	}
 };
 
@@ -33,7 +34,11 @@ var saveItems = function(id){
 	var director = document.getElementById('director').value;
 	var rating = document.getElementById('rating').value;
 	var favorites = document.getElementById('favorites').value;
-	var familyyes = document.getElementById('yes').value;
+	var family = document.getElementById('family').value;
+		if(family == null){
+			location.reload(true);
+			localStorage.setItem('family',0);
+		}
 	var release = document.getElementById('release').value;
 	localStorage.setItem('appgenre', genre);
 	localStorage.setItem('apptitle', title);
@@ -41,7 +46,7 @@ var saveItems = function(id){
 	localStorage.setItem('appdirector', director);
 	localStorage.setItem('apprating', rating);
 	localStorage.setItem('appfavorites', favorites);
-	localStorage.setItem('appfamilyyes', familyyes);
+	localStorage.setItem('appfamily', family);
 	localStorage.setItem('apprelease', release);
 };
 
