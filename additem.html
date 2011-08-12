@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- 
+Jennifer Johnson
+VFW Project 2 - Add Movies to Movie Collection Library
+Term: 1107
+
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Add Movie</title>
+		<meta name="description" content="Add Movie Page" />
+		<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<h1>Add Movie</h1>
+		<form action="" method="post">
+			<fieldset>
+				<legend>Select Genre</legend> <!-- Drop down box to select a movie category -->
+				<label for="genre">Movie Genre: </label>
+				<select id="genre"> <!-- select -->
+					<optgroup label="Genres">
+						<option value="comedy">Comedy</option> <!-- options -->
+						<option value="drama">Drama</option>
+						<option value="action">Action</option>
+						<option value="horror">Horror</option>
+						<option value="suspense">Suspense</option>
+						<option value="documentary">Documentary</option>
+						<option value="other">Other</option>
+					</optgroup>
+				</select>
+				</label>
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>Movie Information</legend>
+				<ul>
+					<li><label for="title">Movie Title:</label><br />
+					<input type="text" id="title" /></li> <!-- text field -->
+					<li><label for="actor">Main Actor/Actress:</label><br />
+					<input type="text" id="actor" /></li> <!-- text field -->
+					<li><label for="director">Director:</label><br />
+					<input type="text" id="director" /></li> <!-- text field -->
+					<li><label for="rating">Rating:</label><br />
+					<input type="range" min="1" max="5" id="rating" /></li> <!-- range field -->
+					<li><label for="favorites">Add to favorites?</label><br />
+					<input type="checkbox" id="favorites" /></li> <!-- checkbox -->
+					<li><label for="family">Is this a family movie?</label><br />
+						<ul>
+							<li><label for="yes">Yes </label><input type="radio" checked value="yes" id="yes" name="family" /></li> <!-- radio button yes -->
+							<li><label for="no">No </label><input type="radio" value="no" id="no" name="family" /></li> <!-- radio button no -->
+						</ul>
+					</li>
+					<li><label for="release">Release Date:</label><br />
+					<input type="date" min="1900-01-01" max="" placeholder="2011-08-04" required aria-required="true" id="title" /></li> <!-- date field -->
+					<li><label for="description">Movie Description: </label><br />
+					<textarea></textarea></li> <!-- textarea -->
+				</ul>
+			</fieldset>
+			<br />
+			<input type="button" value="Add Movie To Collection" /> <!-- button -->
+		</form>
+	</body>
+</html>

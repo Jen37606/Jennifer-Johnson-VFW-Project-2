@@ -1,0 +1,74 @@
+h1{
+	font: 30px Arial;
+	font-weight: bold;
+	border: 1px solid #bbb;
+	color: #555;
+	background: #eee;
+	padding: 10px;
+}
+
+fieldset{
+	font: 16px Arial;
+	background: #eee;
+	border: 1px solid #bbb;
+	padding: 10px;
+}
+
+legend{
+	color: navy;
+	font-weight: bold;
+	border-top: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+	padding: 10px 15px;
+	background: #eee;
+}
+
+label{
+	color: #555;
+}
+
+input{
+	height: 25px;
+	width: 75%;
+	font: 16px Arial;
+	color: #555;
+	margin: 10px 0px;
+}
+
+textarea{
+	width: 75%;
+	font: 16px Arial;
+	color: #555;
+	height: 100px;
+	line-height: 20px;
+}
+
+select{
+	display: block;
+	font: 16px Arial;
+	color: #555;
+}
+
+a{
+	font: 16px Arial;
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover{
+	color: orange;
+}
+
+ul{
+	padding-left: 0px;
+}
+
+li{
+	list-style: none;
+}
+
+li li{
+	padding-left: 10px;
+	color: red;
+}
